@@ -85,8 +85,8 @@ Go言語について学習したことを動作するコードとコメントの
   - documentation
     - コメントのドキュメント化
 - ログ
-  - logs
-    - ログ
+  - printf
+    - fmt.Printf
 - 文字列処理
   - regexp
     - 正規表現
