@@ -18,8 +18,8 @@ func main() {
 	_, hasThree := numberMap["three"]
 	fmt.Printf("hasOne: %v, hasThree: %v\n", hasOne, hasThree)
 
-	// TODO: makeを使うとどういう違いがある？
-	dynamicMap := make(map[int]string)
+	// 事前にエントリ数が分かっているならmakeに渡して最適化のヒントにできる
+	dynamicMap := make(map[int]string, 100)
 	dynamicMap[4] = "four"
 	fmt.Printf("dynamicMap[4]: %v\n", dynamicMap[4])
 }
