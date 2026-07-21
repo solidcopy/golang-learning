@@ -36,6 +36,8 @@ func main() {
 
 	// 型アサーション
 	// インタフェースから実際の型に変換する
+	// anyは任意の型を表す
+	// interface{}は古い書き方
 	var stringAsAny any = "string as any"
 	assertedString := stringAsAny.(string)
 	fmt.Printf("assertedString: %v\n", assertedString)
