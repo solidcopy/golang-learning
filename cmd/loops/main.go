@@ -36,4 +36,14 @@ func main() {
 	}
 
 	// ラベル付きもあるが使わないので省略
+
+	// マップのイテレート
+	// 順序は保証されていない
+	numberMap := make(map[string]int)
+	numberMap["one"] = 1
+	numberMap["two"] = 2
+	numberMap["three"] = 3
+	for k, v := range numberMap {
+		fmt.Printf("key: %v, value: %d\n", k, v)
+	}
 }
